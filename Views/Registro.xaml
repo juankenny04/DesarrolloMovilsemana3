@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesarrolloMovil3.Views.Registro"
+             NavigationPage.HasBackButton="False"
+             Title="Registro">
+    <VerticalStackLayout>
+        <Label 
+    Text="HOME"
+    HorizontalTextAlignment="Center"
+    FontSize="15"
+    TextColor="Red" />
+        <Grid RowSpacing="15">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Entry
+            x:Name="txtUser"
+            Placeholder="INGRESE EL USUARIO"
+            TextTransform="Uppercase"
+               Grid.Row="0"
+ Grid.Column="1"/>
+            <Label Text="Usuario"
+HorizontalOptions="Center"
+FontSize="18"
+Grid.Row="0"
+Grid.Column="0"/>
+
+            <Entry
+    x:Name="txtPassword"
+    Placeholder="INGRESE LA CONTRASEÑA"
+             Grid.Row="1"
+ Grid.Column="1"/>
+            <Label Text="CONTRASEÑA"
+HorizontalOptions="Center"
+FontSize="18"
+Grid.Row="1"
+Grid.Column="0"/>
+        </Grid>
+        <Button
+    x:Name="btnRegistrar"
+    Text="Guardar" 
+    Clicked="btnRegistrar_Clicked"
+                        />
+        
+    </VerticalStackLayout>
+</ContentPage>

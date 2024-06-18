@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DesarrolloMovil3.Views.Login"
+             Title="Login">
+    <VerticalStackLayout
+
+        Spacing= "20"
+        Padding="20">
+        
+        
+        <Label 
+            Text="INICIO DE SESION"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" >
+        </Label>
+
+        <Image
+    Source="https://cdn2.iconfinder.com/data/icons/flat-style-svg-icons-part-1/512/user_login_man-1024.png"
+    HeightRequest="185"
+    Aspect="AspectFit"
+    SemanticProperties.Description="dot net bot in a race car number eight"
+            WidthRequest="100"/>
+        <Grid RowSpacing="15">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="USUARIO"
+                   HorizontalOptions="Center"
+                   FontSize="18"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+       
+        <Entry
+            x:Name="txtUser" 
+            Placeholder="INGRESE EL USUARIO"
+            TextTransform="Uppercase"
+            Grid.Row="0"
+            Grid.Column="1"/>
+
+            <Label Text="CONTRASEÑA"
+       HorizontalOptions="Center"
+       FontSize="18"
+       Grid.Row="1"
+       Grid.Column="0"/>
+            <Entry
+    x:Name="txtContrasena" 
+    Placeholder="INGRESE LA CONTRASEÑA"
+            IsPassword="True"
+             Grid.Row="1"
+ Grid.Column="1"/>
+
+        </Grid>
+        <Button
+            x:Name="btnInicio"
+            Text="INICIAR SESION"
+            Clicked="btnInicio_Clicked"
+            Grid.Row="2"
+Grid.Column="1"/>
+            
+        <Button
+    x:Name="btnRegistrar"
+    Text="REGISTRAR USUARIO"
+    Clicked="btnRegistrar_Clicked"
+            Grid.Row="2"
+Grid.Column="1"/>
+    
+    </VerticalStackLayout>
+</ContentPage>
